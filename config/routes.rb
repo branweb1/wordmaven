@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
 
-  get '/entries/alphabetical/:letter', to: 'entries#show_by_letter'
+  root 'entries#index'
 
-  resources :entries
+  get '/l/:letter', to: 'entries#show_by_letter', as: 'letter'
+
+  get 'id/:id', to: 'entries#show', as: 'entry'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

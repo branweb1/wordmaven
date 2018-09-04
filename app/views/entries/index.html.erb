@@ -1,5 +1,8 @@
 <p>all users here</p>
 <%= will_paginate @entries %>
+<% ('A'..'Z').each do |l| %>
+<%= link_to l, letter_path(l.downcase)  %>
+<% end %>
 <ul>
   <% @entries.each do |e| %>
     <li><%= e.topic%> - <%= link_to "go", e %></li>
