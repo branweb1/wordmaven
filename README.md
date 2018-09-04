@@ -1,24 +1,5 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This site archives an etymology column written by various editors at Random House from 1996 to 2001. Random House removed the column from their website in 2008. It remains available on <a href="http://web.archive.org" target="_blank">the Internet Archive</a> but in a sometimes incomplete and somewhat clunky form. So I decided to collect the columns here for easier access.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[Live Demo Here](https://secure-harbor-30640.herokuapp.com/)
