@@ -1,6 +1,8 @@
 <p>all users here</p>
+<%= will_paginate @entries %>
 <ul>
-<% @entries.each do |e| %>
-  <li><%= e.topic%> - <%= link_to "go", e %></li>
-<% end %>
+  <% @entries.each do |e| %>
+    <li><%= e.topic%> - <%= link_to "go", e %></li>
+  <% end %>
 </ul>
+<%= will_paginate @entries %>

@@ -1,6 +1,6 @@
 class EntriesController < ApplicationController
   def index
-    @entries = Entry.first(10)
+    @entries = Entry.paginate(page: params[:page])
   end
 
   def show
