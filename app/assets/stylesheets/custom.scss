@@ -18,9 +18,21 @@ $gold: #c0963c;
   font-family: Helvetica, Arial, sans-serif;
 }
 
+p {
+  font-size: 1.25em;
+  line-height: 1.4;
+}
+
 h1 {
   font-size:3em;
   font-weight: 600;
+}
+
+
+h2 {
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 1.2em;
 }
 
 
@@ -53,12 +65,14 @@ header {
   }
 
   ul {
+    font-size: 1rem;
     position: absolute;
     right: 0;
     bottom: 1em;
   }
 
   li {
+    font-size: 1.25em;
     display: inline-block;
     margin-left: 0.5em;
     color: $gold;
@@ -93,6 +107,7 @@ header {
   text-align: center;
   letter-spacing: 5px;
   margin-bottom: 2em;
+  font-size: 1.25em;
 }
 
 #entry-list {
@@ -106,6 +121,7 @@ header {
     span {
       margin: 1em;
       display: block;
+      font-size: 1.25em;
     }
   }
 
@@ -117,5 +133,24 @@ header {
 .pagination {
   text-align: center;
   margin: 1em 0;
+  font-size: 1.25em;
 }
 
+#entry-details {
+  width: 80%;
+  margin: 0 auto;
+
+  .question {
+    font-weight: 600;
+    margin-bottom: 1em;
+  }
+
+  br {
+    margin-bottom: 1em;
+  }
+}
+
+#about {
+  width: 80%;
+  margin: 0 auto;
+}
