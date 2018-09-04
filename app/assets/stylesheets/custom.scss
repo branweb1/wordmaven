@@ -1,0 +1,121 @@
+$gold: #c0963c;
+
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  clear: both;
+  *zoom: 1;
+}
+
+:root {
+  font-size: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size:3em;
+  font-weight: 600;
+}
+
+
+header {
+  font-size: 1rem;
+  position: relative;
+  width: 85%;
+  margin: 0 auto;
+  border-bottom: 1px solid black;
+  padding: 1em 0;
+  margin-bottom: 2em;
+
+  h1 {
+    a {
+      color: black;
+      text-decoration: none;
+      
+      &:visited {
+        color: black;
+      }
+
+      &hover {
+        color: black;
+      }
+    }
+  }
+
+  p {
+    color: $gold;
+  }
+
+  ul {
+    position: absolute;
+    right: 0;
+    bottom: 1em;
+  }
+
+  li {
+    display: inline-block;
+    margin-left: 0.5em;
+    color: $gold;
+    font-weight: 600;
+
+    a {
+      color: $gold;
+      text-decoration: none;
+
+      &:visited {
+        color: $gold;
+      }
+
+      &:hover {
+        color: black;
+      }
+
+    }
+
+    &.divider {
+      color: black;
+      font-weight: 400;
+    }
+  }
+
+  div {
+    float: left;
+  }
+}
+
+#alpha-menu {
+  text-align: center;
+  letter-spacing: 5px;
+  margin-bottom: 2em;
+}
+
+#entry-list {
+  padding-left: 15%;
+  
+  section {
+    display: inline-block;
+    width: 33.1%;
+    vertical-align: top;
+
+    span {
+      margin: 1em;
+      display: block;
+    }
+  }
+
+  h1 {
+    margin-left: .33em;
+  }
+}
+
+.pagination {
+  text-align: center;
+  margin: 1em 0;
+}
+

@@ -1,0 +1,5 @@
+<div id="alpha-menu">
+<% ('A'..'Z').each do |l| %>
+  <%= link_to l, letter_path(l.downcase)  %>
+<% end %>
+</div>

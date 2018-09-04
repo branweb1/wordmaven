@@ -1,11 +1,20 @@
-<p>all users here</p>
 <%= will_paginate @entries %>
-<% ('A'..'Z').each do |l| %>
-<%= link_to l, letter_path(l.downcase)  %>
-<% end %>
-<ul>
-  <% @entries.each do |e| %>
-    <li><%= e.topic%> - <%= link_to "go", e %></li>
+
+<div id="entry-list">
+  <% if action_name == 'show_by_letter' %>
+    <h1>
+      <%= params[:letter].upcase %>
+    </h1>
   <% end %>
-</ul>
+  <section>
+    <% @entries.to_a.each_index do |idx| %>
+      <span><%= link_to @entries[idx].topic, @entries[idx] %></span>
+      <% if idx != 0 && idx +1 != Entry.per_page && (idx + 1) % (Entry.per_page / 3) == 0 %>
+      </section>
+      <section>
+    <% end  %>
+  <% end %>
+      </section>
+</div>
+
 <%= will_paginate @entries %>
