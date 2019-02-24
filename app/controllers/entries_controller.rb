@@ -8,8 +8,13 @@ class EntriesController < ApplicationController
   end
 
   def show_by_letter
-    letter = "#{params[:letter]}%"
-    @entries = Entry.where("topic ilike ?", letter).paginate(page: params[:page])
+    letter = "#{params[:letter]}"
+    puts letter
+    if letter == 'misc'
+      @entries = Entry.where("topic !~* ?", "^[a-z]").order('topic').paginate(page: params[:page])
+    else
+      @entries = Entry.where("topic ~* ?", "^#{letter}").order('topic').paginate(page: params[:page])
+    end
     render 'index'
   end
 end
